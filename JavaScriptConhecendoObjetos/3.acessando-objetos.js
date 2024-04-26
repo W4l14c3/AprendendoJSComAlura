@@ -6,10 +6,12 @@ const estudante = {
 }
 
 function exibeInfoEstudante(objEstudante, infoEstudante){
-    return objEstudante[infoEstudante]
+    return `exibeInfoEstudante ${infoEstudante}: ${objEstudante[infoEstudante]}`;
 }
-
+//Acessando objeto estudante pela função exibeInfoEstudante
 console.log(exibeInfoEstudante(estudante, 'nome'));
-console.log(exibeInfoEstudante(estudante, 'cpf'));
-console.log(estudante['idade']);
-console.log(estudante.turma)
+console.log(exibeInfoEstudante(estudante, ['cpf']));
+
+//Acessando objeto diretamente com notação em colchetes ou ponto.
+console.log(`\nResposta usando notação de colchetes:\nidade: ${estudante['idade']}`);
+console.log(`Resposta usando notação de ponto:\nturma: ${estudante.turma}`);
