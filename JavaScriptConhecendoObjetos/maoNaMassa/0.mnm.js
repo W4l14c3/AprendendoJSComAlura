@@ -28,8 +28,10 @@ const pessoa = {
     }
 
 }
-
+// Para adcionar mais uma pessoa ao objeto pessoa, criamos o objeto wallace com sua propriedades.
 pessoa.wallace = {nome : "wallace", idade: 20, cpf: 1123340, email: "wallace@gmail.com"};
+
+//Exibindo cada propriedade/objeto aninhado, dentro do objeto pessoa.
 console.log(pessoa.cudlil);
 console.log(pessoa.lucas);
 console.log(pessoa.wallace);
